@@ -26,31 +26,31 @@
 <body>
   <div class="container">
     <h1>LuckToken</h1>
-    <p>A blockchain-powered token for random draws, prizes, and fair rewards.</p>
+    <p>A blockchain-based token for lucky draws, fair distribution, and fun rewards.</p>
 
     <div class="draw-form">
-      <h2>Join the Draw</h2>
+      <h2>Enter the Draw</h2>
       <input type="text" id="wallet" placeholder="Enter your wallet address" />
       <br />
-      <button class="btn" onclick="register()">Register</button>
+      <button class="btn" onclick="register()">Register Now</button>
       <div class="success-message" id="message"></div>
     </div>
 
     <div class="lottery-section">
-      <h2>Latest Draw Results</h2>
+      <h2>Latest Winners</h2>
       <ul>
-        <li>Winner: 0xA1...F34 - Prize: 500 LUCK</li>
-        <li>Winner: 0xB3...D11 - Prize: 250 LUCK</li>
-        <li>Winner: 0xC9...A77 - Prize: 100 LUCK</li>
+        <li>Winner: 0xA1...F34 – Prize: 500 LUCK</li>
+        <li>Winner: 0xB3...D11 – Prize: 250 LUCK</li>
+        <li>Winner: 0xC9...A77 – Prize: 100 LUCK</li>
       </ul>
     </div>
 
     <div class="links">
-      <a href="#" target="_blank">Telegram</a>
-      <a href="#" target="_blank">Twitter</a>
+      <a href="index.html">🏠 Home</a>
+      <a href="winners.html">🎉 Winners</a>
     </div>
     <div class="contract">
-      Smart Contract (Testnet): <br />
+      Smart Contract (Testnet):<br />
       <code>0x9c6cAF08a87F180cA2A5d92a4E643e13438EDB45</code>
     </div>
   </div>
@@ -86,7 +86,7 @@
         message.innerText = `✅ Successfully registered: ${account}`;
       } catch (err) {
         console.error(err);
-        message.innerText = "❌ Transaction failed. Check console.";
+        message.innerText = "❌ Registration failed. Check the console for details.";
       }
     }
   </script>
